@@ -1,0 +1,85 @@
+/* Command + Shift + / */
+
+/* Element selectors */
+
+h1{
+    color:red;
+    text-decoration: underline;
+}
+
+p {
+    width: 50%;
+color: yellow;
+background-color: red;
+
+
+/* padding to the Top Right Bottom Left */
+padding: 10px 2px 30px 5px;
+
+/* 20px to the top and bottom, 5px to left abd right */
+/* padding: 20px 5px; */
+
+border-radius: 12px;
+margin: 30px;
+border: 2px solid black;
+
+}
+
+
+
+button {
+    color: white;
+    background-color: black;
+    border: 0;
+    border-radius: 5px;
+    padding: 8px 16px;
+    margin: 8px;
+}
+
+
+h3:hover {
+color:red;
+}
+
+h3:focus {
+    color:red;
+    }
+
+h3:visited {
+        color:blueviolet;
+        }
+        
+    
+
+
+
+
+
+
+
+
+/* ID selectors */
+#msg {
+    background-color:beige;
+}
+
+html, body {
+    margin:0;
+    padding: 0;
+    /* font-family: 'Oswald', sans-serif; */
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+
+}
+
+/* Universal selectors */
+
+/* * { 
+    color: coral;
+}*/
+
+
+/* class selector */
+.subtitel {
+    color:darkblue;
+}
