@@ -9,6 +9,11 @@ body {
     font-size: 18px;;
 }
 
+.figma-icon {
+    margin-left: 20px;
+    width: 40px;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -19,32 +24,31 @@ nav a {
     margin: 0px 16px;
     text-decoration: none;
     color: black;
+    letter-spacing: 0.02em;
 }
 
 button {
     color: #fff;
     background-color: #000;
-    border-radius: 12px;
     border: 2px solid #000;
+    border-radius: 12px;
     padding: 10px 14px;
     margin: 10px 5px;
     display: inline-block;
     width: auto;
     letter-spacing: 0.05em;
     font-weight: 700;
+    transition: transform 200ms ease 0s, background 200ms ease 0s;
 }
+
+button:hover {
+    transform: translateY(-3px);
+  }
 
 button.secondary {
     color: #000;
     background-color: #fff;
-    border-radius: 12px;
     border: 2px solid #fff;
-    padding: 10px 14px;
-    margin: 10px 5px;
-    display: inline-block;
-    width: auto;
-    letter-spacing: 0.05em;
-    font-weight: 700;
 }
 
 section {
@@ -55,32 +59,6 @@ section.yellow {
 background-color: #fbcc00;
 }
 
-section.community {
-    background-color: #000;
-    color: white;
-}
-
-
-section.community img {
-    border-radius: 12px;
-    display: block;
-    margin: 32px 0px;
-    padding: 0px;
-}
-
-input {
-    margin: 32px 0px;
-    display: block;
-    border: 2px solid #000;
-    border-radius: 4px;
-    padding: 8px;
-    width: 260px;
-}
-
-::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
-    color: #fbcc00;
-    opacity: 1; /* Firefox */
-  }
 
  footer p {
 font-size: 13px;
@@ -95,4 +73,122 @@ text-align: initial;
 .icon {
     margin-right: 8px;
 color: blueviolet;
+  }
+
+
+
+
+  /* Section alignements */
+  /* Main Video */
+
+.figma-video {
+    height: 350px;
+}
+
+section.main_video {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ /* Design for the web */
+
+video.middle  {
+    width: 550px;
+}
+
+div.subtitle {
+    font-size: 20px;
+    line-height: 26px;
+    max-width: 500px;
+}
+
+.design_web, .plugin {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+ /* Plugins */
+
+
+.size  {
+    width: 550px;
+}
+
+.yellow {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+ /* Community */
+
+.community {
+    background-color: #000;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+.community img {
+    border-radius: 12px;
+    display: block;
+    margin: 32px 16px;
+    max-width: 400px;
+    object-fit: cover;
+}
+
+.com_img  {
+    display: flex;
+    align-items:stretch
+    justify-content: space-around;
+}
+
+.community h2 {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.community p {
+    max-width: 800px;
+    text-align: center;
+}
+
+input {
+    margin: 10px 0px;
+    display: block;
+    border: 2px solid #000;
+    border-radius: 4px;
+    padding: 8px;
+    width: 260px;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #fbcc00;
+    opacity: 1; /* Firefox */
+  }
+
+  .sign_form {
+display: flex;
+flex-direction: column;
+align-items: center;
+  }
+
+  form {
+    display: flex;  
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .foo_sec {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: flex-start;
   }
